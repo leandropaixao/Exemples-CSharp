@@ -5,6 +5,6 @@ class Program
 {
     public static void Main()
     {
-        Console.Writeline(OutilsPourStrings.GetTexteSepareDuCamelCase("GetTexteSepareDuCamelCase"));
+        Console.WriteLine(OutilsPourStrings.GetTexteSepareDuCamelCase("GetTexteSepareDuCamelCase"));
     }
 }    
