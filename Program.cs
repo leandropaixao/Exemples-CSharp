@@ -1,13 +1,10 @@
 using System;
 using Strings.Outils;
 
-namespace Exemples-CSharp
+class Program
 {
-    class Program
+    public static void Main()
     {
-        public static void Main()
-        {
-            Console.Writeline(OutilsPourStrings.GetTexteSepareDuCamelCase("GetTexteSepareDuCamelCase"));
-        }
-    }    
-}
+        Console.Writeline(OutilsPourStrings.GetTexteSepareDuCamelCase("GetTexteSepareDuCamelCase"));
+    }
+}    

@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace Strings.Outils
 {
@@ -8,7 +9,14 @@ namespace Strings.Outils
         {
             // Recoit une texte dans le format GetTextCamelCase
             // et retourne le texte separé Get Text Camel Case
-            return Regex.Matches(requestName, @"[A-Z]{1}[a-z]{1,}").Trim();
+            var retour = "";
+            var regexMatches = Regex.Matches(texte, @"[A-Z]{1}[a-z]{1,}");
+            foreach(var reg in regexMatches)
+            {
+                retour += string.Concat(reg, " ");
+            }
+
+            return retour.Trim();
         }
     }
 }
